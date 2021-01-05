@@ -1,12 +1,10 @@
+<script>
 function computerPlay(){
   let options = ['rock', 'paper', 'scissors']
-  return options[Math.floor(Math.random() * options.length]
-  }
-  
+  return options[Math.floor(Math.random() * options.length)]
+}
 function playRound(playerSelection, computerSelection) {
-  const computerSelection = computerPlay();
-  showSelections(playerSelection,computerSelection);
-    
+  computerPlay();
   if(playerSelection === 'rock' && computerSelection === 'rock'){
     return 'You have tied! You both chose rock.'
   } else if (playerSelection === 'rock' && computerSelection === 'scissors'){
@@ -15,7 +13,7 @@ function playRound(playerSelection, computerSelection) {
     return 'You lose! Paper beats rock.'
   }
     
-  if(playerSelection === 'paper' && computerSelection === 'rock')(
+  if(playerSelection === 'paper' && computerSelection === 'rock'){
     return 'You win! Paper beats rock.'
   } else if(playerSelection === 'paper' && computerSelection === 'paper'){
     return 'You have tied! You both chose rock.'
@@ -32,6 +30,7 @@ function playRound(playerSelection, computerSelection) {
   }
 }
 
-const playerSelection = 'rock';
-console.log(playRound(playerSelection, computerSelection);
-  
+playerSelection = 'rock';
+computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
+</script>
