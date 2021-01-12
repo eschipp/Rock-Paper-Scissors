@@ -40,19 +40,19 @@ function game() {
       playRound();
         console.log(`Player Score: ${playerScore}`);
         console.log(`Computer Score: ${computerScore}`);
-      if(playerSelection === 'rock' && computerSelection === 'rock'){
+      if (playerSelection === 'rock' && computerSelection === 'rock'){
         console.log('--No Points Awarded--');
-        } else if(playerSelection === 'paper' && computerSelection === 'paper'){
+        } else if (playerSelection === 'paper' && computerSelection === 'paper'){
           console.log('--No Points Awarded--');
-        } else if(playerSelection === 'scissors' && computerSelection === 'scissors'){
+        } else if (playerSelection === 'scissors' && computerSelection === 'scissors'){
           console.log('--No Points Awarded--');
         } else if (playerSelection === 'rock' && computerSelection === 'scissors'){
           console.log('--One Point Awarded To Player--');
-        } else if(playerSelection === 'paper' && computerSelection === 'rock'){
+        } else if (playerSelection === 'paper' && computerSelection === 'rock'){
           console.log('--One Point Awarded To Player--');
-        } else if(playerSelection === 'scissors' && computerSelection === 'paper'){
+        } else if (playerSelection === 'scissors' && computerSelection === 'paper'){
           console.log('--One Point Awarded To Player--');
-        } else if(playerSelection === 'rock' && computerSelection === 'paper'){
+        } else if (playerSelection === 'rock' && computerSelection === 'paper'){
           console.log('--One Point Awarded To Computer--');
         } else if (playerSelection === 'paper' && computerSelection === 'scissors'){
           console.log('--One Point Awarded To Computer--');
@@ -62,7 +62,7 @@ function game() {
       }
     console.log('RESULTS:')
     console.log(`Computer Score: ${computerScore} // Player Score: ${playerScore}`)
-    if(computerScore > playerScore) {
+    if (computerScore > playerScore) {
   console.log(`Boo hoo! The Computer beat you.`);
   } else if (computerScore < playerScore) {
   console.log(`Congratulations! You beat the computer.`);
